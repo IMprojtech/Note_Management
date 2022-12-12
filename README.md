@@ -1,7 +1,7 @@
 # Note-Management
 
 # Description:
-nm is a note management system, designed to work from the command line, it simplifies the storage of information and optimizes the search for it.
+nm is a note management system, designed to work from the command line Linux, it simplifies the storage of information and optimizes the search for it.
  
 it allows you to save notes by cataloging them with tags, to divide them and organize them better, and it also allows you to link files to make them easily accessible.
 

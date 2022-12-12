@@ -24,7 +24,7 @@ open the .bashrc file in the user's home
 
 and paste the path at the end of the file:
 
-export PATH = "$HOME/Note_Management:$PATH"
+export PATH="$HOME/Note_Management:$PATH"
 
 save and exit
 

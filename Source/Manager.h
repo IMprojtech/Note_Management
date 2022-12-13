@@ -41,7 +41,7 @@ void Save(void){ // salva le note
 int size = sizeof (NotesData);
  int check;	
 
-if ((PtrFile = fopen (DefaultFile, "a")) == NULL ) Error(ErrorOpenFile,""); 
+if ((PtrFile = fopen (DefaultFile, "rb+")) == NULL ) Error(ErrorOpenFile,""); 
 
 if (NDat.Index==0){
  fseek(PtrFile,0,SEEK_END); 

@@ -12,7 +12,7 @@
 #define Name   "nm" 
  
 #define Dir   "/.config" 
- #define SetFile   "/nmconf" 
+ #define SetFile   "/nm.conf" 
   #define FileNotes  "/Notes.Dat"
    
 #define GRS   "\e[1m"

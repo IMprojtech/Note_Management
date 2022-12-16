@@ -112,7 +112,7 @@ fseek(PtrFile,x*size,SEEK_SET);
 if (NDat.Index != 0){ 
  if (cont==1 || cont==4) Insert( &startPtr,  NDat.Tag, NDat.Index); // ordina per tag
   if (cont==2) Insert( &startPtr, NDat.Data, NDat.Index); // ordina per data
-   if (cont==3){ sprintf(num, "%d", NDat.Index); Insert( &startPtr, num, NDat.Index);}}  // // ordina per indice
+   if (cont==3){ sprintf(num, "%.4d", NDat.Index); Insert( &startPtr, num, NDat.Index);}}  // // ordina per indice
    
 x++; memset(&NDat,0,size);}
  fclose( PtrFile );

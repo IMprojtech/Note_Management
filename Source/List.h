@@ -89,7 +89,7 @@ while ( sPtr != NULL ) {
 void PrintNotesTag(NodiListaPtr sPtr,char key[]){
  
 while ( sPtr != NULL ) { 
- if (strcasecmp(sPtr->str,key) == 0){
+ if (strncasecmp(sPtr->str,key,strlen(key)) == 0){
   Trova((sPtr->code)-1); PrintDat();}
    sPtr = sPtr->prosPtr;}}
 

@@ -27,11 +27,11 @@ printf("%sEXAMPLE:%s\n",GRS,NML);
  printf("    %s -t T02 \"notes\"   %s->%s    adds a note tagged h02\n",Name,GRS,NML);
   printf("    %s -t T02 -a \"file.txt\"   %s->%s    adds a file with tag h02\n",Name,GRS,NML);
    printf("    %s -p -t T02   %s->%s    print all notes tagged h02\n",Name,GRS,NML);
-    printf("    %s -p -f -x 5   %s->%s    print the file with index 5\n",Name,GRS,NML);
-   printf("    %s -s   %s->%s    shows all tags used\n",Name,GRS,NML);
-  printf("    %s -r -x 5   %s->%s    remove the file with index 5\n",Name,GRS,NML);
- printf("    %s --setting   %s->%s    set up a new notes file\n",Name,GRS,NML);
-printf("    %s --rebuild   %s->%s    rebuilds the notes file\n\n",Name,GRS,NML);
+    printf("    %s -f 5   %s->%s    print the file with index 5\n",Name,GRS,NML);
+    printf("    %s -s   %s->%s    shows all tags used\n",Name,GRS,NML);
+   printf("    %s -r 5   %s->%s    remove the file with index 5\n",Name,GRS,NML);
+  printf("    %s --setting   %s->%s    set up a new notes file\n",Name,GRS,NML);
+ printf("    %s --rebuild   %s->%s    rebuilds the notes file\n\n",Name,GRS,NML);
 
 printf("%sAUTHOR%s\n    Written by IMprojtech\n\n",GRS,NML);
 
@@ -39,8 +39,8 @@ printf("%sVERSION%s\n    1.0\n\n",GRS,NML);}
 
 void PrintDat(void){
 
-if(NDat.Index==0)printf("      %s%-20s%s %s%-11s%s %s%s%s %s%s%s\n",YEL,NDat.Tag,WHT,GRN,NDat.Data,WHT,WHT,NDat.Note,WHT,BLU,NDat.Link_File,WHT);   
- else printf(" %s%-4d%s %s%-20s%s %s%-11s%s %s%s%s %s%s%s\n",RED,NDat.Index,WHT,YEL,NDat.Tag,WHT,GRN,NDat.Data,WHT,WHT,NDat.Note,WHT,BLU,NDat.Link_File,WHT);}
+if(NDat.Index==0)printf("%s      %s%-20s%s %s%-11s%s %s%s%s %s%s%s%s\n",GRS,YEL,NDat.Tag,WHT,GRN,NDat.Data,WHT,WHT,NDat.Note,WHT,CYN,NDat.Link_File,WHT,NML);   
+ else printf("%s %s%-4d%s %s%-20s%s %s%-11s%s %s%s%s %s%s%s%s\n",GRS,RED,NDat.Index,WHT,YEL,NDat.Tag,WHT,GRN,NDat.Data,WHT,WHT,NDat.Note,WHT,CYN,NDat.Link_File,WHT,NML);}
 	
 void PrintFile(void){ 
 	
@@ -55,6 +55,5 @@ while (!feof(input)) {
   ch = fgetc(input);}  
   
 printf("\n\n");  
- fclose(input);}
-				
+ fclose(input);}	
 	

@@ -18,7 +18,6 @@ if ((PtrFile = fopen (Setting, "r")) == NULL ){  // verifica se il file "Setting
  Primo_Avvio(); Help(); exit(0); } // se non esiste lancia Primo_Avvio() 
   else{ fclose( PtrFile );
    
-if (argc < 2 ){ Help(); return 0;}
- SetRead(); Scanner(argc, argv);} // SetRead() legge il file di configurazione; Scanner() verifica gli argomenti inseriti
-  return 0;}
+SetRead(); Scanner(argc, argv);} // SetRead() legge il file di configurazione; Scanner() verifica gli argomenti inseriti
+ return 0;}
 
